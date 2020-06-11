@@ -1,0 +1,32 @@
+# Jekyll config
+title: Aurélien Bec
+email: aurelien.bec@gmail.com
+description: Something more you want to know about me?
+baseurl: ""
+url: https://aurelbec.github.io
+twitter_username: ""
+github_username: AurelBec
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-tidy
+  - jekyll-feed
+  - jekyll-sass-converter
+
+jekyll_tidy:
+  compress_html: true
+
+sass:
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
