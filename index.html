@@ -1,0 +1,258 @@
+---
+layout: default
+---
+
+<header class="resume-header pt-4 pt-md-0">
+	<div class="media flex-column flex-md-row">
+		<img class="mr-3 img-fluid picture mx-auto" src="/images/profile.jpg" alt="">
+		<div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+			<div class="primary-info">
+				<h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">
+					{{site.data.about.name}}
+				</h1>
+				<div class="title mb-1">
+					{{site.data.about.job}}
+				</div>
+
+				<div class="carousel slide mb-2" data-ride="carousel">
+					<div class="carousel-inner">
+						{% for detail in site.data.about.details %}
+						<div class="carousel-item{% if forloop.first %} active{% endif %}">
+							{{detail}}
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+
+				<ul class="list-unstyled mb-0 mt-4">
+					{% for contact in site.data.about.primary_contacts %}
+					<li class="mt-2">
+						<a href="{{contact.action}}">
+							<i class="{{contact.icon}} fa-fw mr-2" data-fa-transform="grow-5"></i>
+							{{contact.text}}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<!--//primary-info-->
+
+			<div class="secondary-info ml-md-auto mt-4">
+				<ul class="resume-social list-unstyled mb-0">
+					{% for contact in site.data.about.secondary_contacts %}
+					<li class="mb-3">
+						<a href="{{contact.action}}">
+							<span class=" fa-container text-center mr-2">
+								<i class="{{contact.icon}}"></i>
+							</span>
+							{{contact.text}}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<!--//secondary-info-->
+		</div>
+		<!--//media-body-->
+	</div>
+	<!--//media-->
+</header>
+<!-- //header -->
+
+<div class=" resume-body p-5">
+
+	<section class="resume-section summary-section mb-5">
+		<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+			{{site.data.summary.section}}</h2>
+		<div class="resume-section-content">
+			<p class="mb-0">
+				{{site.data.summary.content}}
+			</p>
+		</div>
+	</section>
+	<!--//summary-section-->
+
+	<div class="row">
+		<div class="col-lg-9 d-flex flex-lg-column">
+
+			<section class="resume-section experience-section mb-5">
+				<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					{{site.data.work_experience.section}}
+				</h2>
+				<div class="resume-section-content">
+					<div class="resume-timeline position-relative">
+						{% for experience in site.data.work_experience.list %}
+						<article class="resume-timeline-item position-relative pb-5">
+							<div class="resume-timeline-item-header mb-2">
+								<div class="d-flex flex-column flex-md-row">
+									<h3 class="resume-position-title font-weight-bold mb-1">
+										{{experience.position}}
+									</h3>
+									<div class="resume-company-name ml-auto">
+										{{experience.company}}
+									</div>
+								</div>
+								<!--//row-->
+								<div class="resume-position-time">
+									{{experience.time}}
+								</div>
+							</div>
+							<!--//resume-timeline-item-header-->
+							<div class="resume-timeline-item-desc">
+								<p>{{experience.description}}</p>
+
+								{% if experience.achievements.size > 0 %}
+								<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+									Achievements:
+								</h4>
+								{% for achievement in experience.achievements %}
+								<p>{{achievement.description}}</p>
+								<ul>
+									{% for detail in achievement.details %}
+									<li>{{detail}}</li>
+									{% endfor %}
+								</ul>
+								{% endfor %}
+								{% endif %}
+
+								{% if experience.technologies.size > 0 %}
+								<h4 class="resume-timeline-item-desc-heading font-weight-bold">
+									Technologies used:</h4>
+								<ul class="list-inline">
+									{% for techno in experience.technologies %}
+									<li class="list-inline-item">
+										<span class="badge badge-primary badge-pill">{{techno}}</span>
+									</li>
+									{% endfor %}
+								</ul>
+								{% endif %}
+							</div>
+							<!--//resume-timeline-item-desc-->
+						</article>
+						{% endfor %}
+						<!--//resume-timeline-item-->
+					</div>
+					<!--//resume-timeline-->
+				</div>
+			</section>
+			<!--//experience-section-->
+
+			<div class="resume-section experience-section resume-timeline position-relative"></div>
+
+		</div>
+		<div class="col-lg-3">
+
+			<section class="resume-section skills-section mb-5">
+				<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					{{site.data.skills.section}}
+				</h2>
+				<div class="resume-section-content">
+					{% for category in site.data.skills.list %}
+					<div class="resume-skill-item">
+						<h4 class="resume-skills-cat font-weight-bold">
+							{{category.name}}
+						</h4>
+						{% if category.skills[0].name %}
+						<ul class="list-unstyled mb-4">
+							{% for skill in category.skills %}
+							<li class="mb-2">
+								<div class="resume-skill-name">
+									{{skill.name}}
+								</div>
+								<div class="progress resume-progress">
+									<div class="progress-bar theme-progress-bar-dark" role="progressbar"
+										style="width: {{skill.progress}}%" aria-valuenow="25" aria-valuemin="0"
+										aria-valuemax="100">
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+						</ul>
+						{% else %}
+						<ul class="list-inline">
+							{% for skill in category.skills %}
+							<li class="list-inline-item"><span class="badge badge-light">{{skill}}</span></li>
+							{% endfor %}
+						</ul>
+						{% endif %}
+					</div>
+					<!--//resume-skill-item-->
+					{% endfor %}
+				</div>
+				<!--resume-section-content-->
+			</section>
+			<!--//skills-section-->
+
+			<section class="resume-section education-section mb-5">
+				<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					{{site.data.education.section}}
+				</h2>
+				<div class="resume-section-content">
+					<ul class="list-unstyled">
+						{% for degree in site.data.education.list %}
+						<li class="mb-2">
+							<div class="resume-degree font-weight-bold">{{degree.degree}}</div>
+							<div class="resume-degree-org">{{degree.school}}</div>
+							<div class="resume-degree-time">{{degree.time}}</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</section>
+			<!--//education-section-->
+
+			<section class="resume-section reference-section mb-5">
+				<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					{{site.data.references.section}}
+				</h2>
+				<div class="resume-section-content">
+					<ul class="list-unstyled resume-awards-list">
+						{% for ref in site.data.references.list %}
+						<li class="mb-2 pl-4 position-relative">
+							<i class="resume-award-icon {{ref.icon}} position-absolute"
+								data-fa-transform="shrink-2"></i>
+							<div class="resume-award-name">{{ref.name}}</div>
+							<div class="resume-award-desc">{{ref.desc}}
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</section>
+			<!--//reference-section-->
+
+			<section class="resume-section language-section mb-5">
+				<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					{{site.data.languages.section}}
+				</h2>
+				<div class="resume-section-content">
+					<ul class="list-unstyled resume-lang-list">
+						{% for language in site.data.languages.list %}
+						<li class="mb-2">
+							<span class="resume-lang-name font-weight-bold">{{language.name}}</span>
+							<small class="text-muted font-weight-normal">{{language.desc}}</small>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</section>
+			<!--//language-section-->
+
+			<section class="resume-section interests-section mb-5">
+				<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
+					{{site.data.interests.section}}
+				</h2>
+				<div class="resume-section-content">
+					<ul class="list-unstyled">
+						{% for interest in site.data.interests.list %}
+						<li class="mb-1">{{interest}}</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</section>
+			<!--//interests-section-->
+
+		</div>
+	</div>
+	<!--//row-->
+</div>
