@@ -3,7 +3,33 @@ name: Aurélien Bec
 job: Robotic Engineer
 
 primary_contacts:
+  - icon: far fa-envelope
+    text: Aurelien.Bec@gmail.com
+    action: mailto:aurelien.bec@gmail.com
+  - icon: fas fa-mobile-alt
+    text: (+33)6 29 90 43 12
+    action: tel:+33629904312
 
 secondary_contacts:
+  - icon: fab fa-linkedin-in fa-fw
+    text: /aurelienbec
+    action: https://linkedin.com/in/aurelienbec
+  - icon: fab fa-github-alt fa-fw
+    text: /AurelBec
+    action: https://github.com/AurelBec
+  - icon: fab fa-facebook fa-fw
+    text: /aurelien.bec
+    action: https://facebook.com/aurelien.bec
+  - icon: fas fa-globe
+    text: www.aurelienbec.fr
+    action: https://aurelienbec.fr"
 
 details:
+  - I live near Paris
+  - I am interested in all robotics fields
+  - I read comic books and maintain a pretty big collection
+  - I watch a lot movies and I used to run a weekly movie night
+  - I write code and idiotic comments about the things I see
+  - I was President at my school's Students' union (I am not anymore, but they're still cool)
+  - I am working with some awesome people right now to disrupt an industry
+  - I have a more detailed résumé if you're into that sort of thing
