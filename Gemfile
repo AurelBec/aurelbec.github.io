@@ -29,3 +29,9 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# The kramdown gem before 2.3.0 for Ruby processes the template option inside Kramdown documents by default,
+# which allows unintended read access (such as template="/etc/passwd") or unintended embedded Ruby code execution 
+# (such as a string that begins with template="string://<%= `). 
+# NOTE: kramdown is used in Jekyll, GitLab Pages, GitHub Pages, and Thredded Forum.
+gem "kramdown", ">= 2.3.0"
