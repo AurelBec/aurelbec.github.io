@@ -1,0 +1,29 @@
+---
+name: Aurélien Bec
+job: Robotic Engineer
+
+primary_contacts:
+  - icon: far fa-envelope
+    text: Aurelien.Bec@gmail.com
+    action: mailto:aurelien.bec@gmail.com
+  - icon: fas fa-mobile-alt
+    text: (+33)6 29 90 43 12
+    action: tel:+33629904312
+
+secondary_contacts:
+  - icon: fab fa-linkedin-in fa-fw
+    text: /aurelienbec
+    action: https://linkedin.com/in/aurelienbec
+  - icon: fab fa-github-alt fa-fw
+    text: /AurelBec
+    action: https://github.com/AurelBec
+  - icon: fab fa-facebook fa-fw
+    text: /aurelien.bec
+    action: https://facebook.com/aurelien.bec
+  - icon: fas fa-globe
+    text: www.aurelienbec.fr
+    action: https://aurelienbec.fr"
+
+# List of Facts
+details:
+  # - Something about me
