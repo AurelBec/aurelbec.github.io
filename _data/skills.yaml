@@ -10,3 +10,38 @@ list:
   # - name: Others
   #   skills:
   #     - Other Skill Name
+  - name: Frontend
+    skills:
+      - name: Angular
+        progress: 98
+      - name: React
+        progress: 94
+      - name: JavaScript
+        progress: 96
+      - name: Node.js
+        progress: 92
+      - name: HTML/CSS/SASS/LESS
+        progress: 96
+
+  - name: Backend
+    skills:
+      - name: Python/Django
+        progress: 95
+      - name: Ruby/Rails
+        progress: 92
+      - name: PHP
+        progress: 86
+      - name: WordPress/Shopify
+        progress: 82
+
+  - name: Others
+    skills:
+      - DevOps
+      - Code Review
+      - Git
+      - Unit Testing
+      - Wireframing
+      - Sketch
+      - Balsamiq
+      - WordPress
+      - Shopify

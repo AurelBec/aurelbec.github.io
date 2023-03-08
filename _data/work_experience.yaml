@@ -13,3 +13,95 @@ list:
   #         - Achievement Detail
   #   technologies:
   #     - Technology Used
+
+  - company: Startup Hub
+    position: Lead Developer
+    time: 2018 - Present
+    description: Role description goes here ipsum dolor sit amet,
+      consectetuer adipiscing
+      elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec
+      quam felis, ultricies nec, pellentesque eu, pretium
+      quis, sem. Donec
+      pede justo, fringilla vel.
+    achievements:
+      - description:
+          Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+          excepturi sint occaecati cupiditate non provident.
+        details:
+          - Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.
+          - At vero eos et accusamus et iusto odio dignissimos.
+          - Blanditiis praesentium voluptatum deleniti atque corrupti.
+          - Maecenas tempus tellus eget.
+    technologies:
+      - Angular
+      - Python
+      - jQuery
+      - Webpack
+      - HTML/SASS
+      - PostgresSQL
+
+  - company: Google
+    position: Senior Software Developer
+    time: 2014 - 2018
+    description: Role description goes here
+    achievements:
+      - description: Cum sociis natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium
+          quis, sem.
+    technologies:
+      - React
+      - Redux
+      - Django
+      - Webpack
+      - HTML/SASS
+      - MySQL
+
+  - company: To-do Lists
+    position: Co-Founder & Lead Developer
+    time: 2012 - 2014
+    description: |
+      Role description goes here ipsum dolor sit amet,
+                            consectetuer adipiscing
+                            elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec
+                            quam felis, ultricies nec.
+
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean commodo
+                                ligula eget dolor. Aenean massa. Cum sociis natoque
+                                penatibus et magnis
+                                dis parturient montes.
+    technologies:
+      - Django
+      - JavaScript
+      - Node.js
+      - Require.js
+      - HTML/SASS
+
+  - company: Amazon
+    position: Web Developer <small class="text-muted">(Intern)</small>
+    time: 2011 - 2012
+    description: Role description goes here ipsum dolor sit amet,
+      consectetuer adipiscing
+      elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec
+      quam felis, ultricies nec. Fusce vulputate eleifend
+      sapien. Vestibulum
+      purus quam, scelerisque ut, mollis sed, nonummy id,
+      metus. Nullam
+      accumsan lorem in dui. Cras ultricies mi eu turpis
+      hendrerit fringilla.
+      Vestibulum.
+    technologies:
+      - Ruby on Rails
+      - jQuery
+      - HTML/LESS
+      - MongoDB

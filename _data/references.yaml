@@ -6,3 +6,11 @@ list:
   # - name: Award Name
   #   icon: fas fa-trophy
   #   desc: Award desc goes here
+
+  - name: Award Name Lorem
+    icon: fas fa-trophy
+    desc: Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
+
+  - name: Award Name Ipsum
+    icon: fas fa-trophy
+    desc: Award desc goes here, ultricies nec, pellentesque.

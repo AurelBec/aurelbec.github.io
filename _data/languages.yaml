@@ -5,3 +5,12 @@ section: Languages
 list:
   # - name: Language Name
   #   desc: (Level)
+
+  - name: English
+    desc: (Native)
+
+  - name: French
+    desc: (Professional)
+
+  - name: Spanish
+    desc: (Professional)

@@ -6,3 +6,11 @@ list:
   # - degree: Degree Name
   #   school: School Name
   #   time: Start Year - End Year
+
+  - degree: MSc in Computer Science
+    school: University College London
+    time: 2010 - 2011
+
+  - degree: BSc Maths and Physics
+    school: Imperial College London
+    time: 2007 - 2010
